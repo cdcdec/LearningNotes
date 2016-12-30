@@ -1,0 +1,3 @@
+# AppCompatActivity相关
+
+1.  Android studio工程Activity默认继承AppCompatActivity,且application使用的样式是Theme.AppCompat.Light.DarkActionBar.此时如果Activity不继承AppCompatActivity,那么响应的Activity将不会出现ActionBar.
