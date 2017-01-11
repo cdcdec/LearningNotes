@@ -1,5 +1,6 @@
 # LearningNotes
+
 LearningNotes
 
-* [Android](Android.md)
-* [books](books.md)
+- [Android](Android.md)
+- [books](books.md)
