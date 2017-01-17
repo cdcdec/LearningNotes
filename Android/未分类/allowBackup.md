@@ -1,0 +1,5 @@
+# allowBackup
+
+Android API Level 8及其以上Android系统提供了为应用程序数据的备份和恢复功能，此功能的开关决定于该应用程序中 AndroidManifest.xml 文件中的allowBackup属性值,其属性值默认是True。当allowBackup标志为 true时，用户即可通过 adb backup和adb restore来进行对应用数据的备份和恢复，这可能会带来一定的安全风险.因此为了安全起见，开发者务必将 allowBackup标志值设置为false来关闭应用程序的备份和恢复功能，以免造成信息泄露和财产损失。
+
+在AndroidManifest.xml文件中的application节点中设置.
