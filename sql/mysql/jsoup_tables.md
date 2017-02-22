@@ -11,7 +11,8 @@ CREATE TABLE authors
   auth_city    char(50)  NULL ,
   auth_dynasty  char(20)  NOT NULL ,
   auth_desc   char(255) NULL,
-  auth_num_works  char(30) NULL
+  auth_num_works  char(30) NULL,
+  auth_original_url  char(120) NULL
 
 );
 ```
