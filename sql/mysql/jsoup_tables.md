@@ -1,7 +1,7 @@
 ```txt
 
 -------------------------
--- Create Customers table
+-- Create authors table
 -------------------------
 CREATE TABLE authors
 (
@@ -17,8 +17,39 @@ CREATE TABLE authors
 );
 
 
+-------------------------
+-- Create source table
+-------------------------
+CREATE TABLE source
+(
+  sour_id      integer   NOT NULL ,
+  auth_name    char(50)  NOT NULL ,
+  sour_url     char(150)  NULL ,
+  article_name    char(50)  NULL
+);
+
+-------------------------
+-- Create article table
+-------------------------
+CREATE TABLE article
+(
+  article_id      integer   NOT NULL ,
+  auth_name    char(50)  NOT NULL ,
+  sour_url     char(150)  NULL ,
+  article_name    char(50)  NULL
+);
+
+
+
+
+
 ----------------------
 -- Define primary keys
 ----------------------
 ALTER TABLE authors ADD PRIMARY KEY (auth_id);
+ALTER TABLE source ADD PRIMARY KEY (sour_id);
+//sour_id默认值为1
+alter table source modify sour_id integer default '1';
+//sour_id自动增长
+alter table source modify sour_id integer auto_increment;
 ```
