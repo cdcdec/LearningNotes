@@ -45,3 +45,23 @@ while(iterator.hasNext()){
 		}
 
 ````
+## 使用foreach遍历集合元素
+foreach中的集合迭代变量也不是集合元素本身,系统只是依次把集合元素的值赋给迭代变量,因此修改迭代变量的值没有任何意义,同时在foreach中也不能修改这个集合,否则会引发异常.
+```txt
+public static void main(String[] args) {
+        Collection<String> books = new HashSet<String>();
+        books.add(new String("轻量级Java EE企业应用实战"));
+        books.add(new String("疯狂Java讲义"));
+        books.add(new String("疯狂Android讲义"));
+        for (String obj : books) {
+            // 此处的book变量也不是集合元素本身
+            String book =obj;
+            System.out.println(book);
+            if (book.equals("疯狂Android讲义")) {
+                // 下面代码会引发ConcurrentModificationException异常
+                // books.remove(book);
+            }
+        }
+        System.out.println(books);
+    }
+```
