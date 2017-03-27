@@ -1,0 +1,4 @@
+# window
+Window对象表示浏览器中打开的窗口。如果文档包含框架(frame或iframe 标签)，浏览器会为HTML文档创建一个window对象，并为每个框架创建一个额外的window对象。
+所有浏览器都支持window对象。它表示浏览器窗口。所有JavaScript全局对象、函数以及变量均自动成为window对象的成员。全局变量是window对象的属性。全局函数是window对象的方法。
+
