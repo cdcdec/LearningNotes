@@ -29,3 +29,8 @@ window.setTimeout('window.close()',5000);
 ```
 * close() 方法用于关闭浏览器窗口。某个窗口可以通过调用self.close()或只调用close()来关闭其自身。只有通过JavaScript代码打开的窗口才能够由JavaScript代码关闭。这阻止了恶意的脚本终止用户的浏览器。
 * moveTo()方法可把窗口的左上角移动到一个指定的坐标.window.moveTo(x,y),x,窗口新位置的x坐标;y,窗口新位置的y坐标.出于安全方面的原因，浏览器限制此方法使其不能把窗口移出屏幕。
+* alert()方法用于显示带有一条指定消息和一个OK按钮的警告框。alert(message),message,要在window上弹出的对话框中显示的纯文本(而非HTML文本).
+```txt
+alert("第一行" + "\n" + "如何在消息框中添加折行。");
+
+```
