@@ -15,7 +15,7 @@
 -------------------------
 -- Create Customers table
 -------------------------
-CREATE TABLE Customers
+CREATE TABLE IF NOT EXISTS Customers
 (
   cust_id      char(10)  NOT NULL ,
   cust_name    char(50)  NOT NULL ,
@@ -32,7 +32,7 @@ CREATE TABLE Customers
 --------------------------
 -- Create OrderItems table
 --------------------------
-CREATE TABLE OrderItems
+CREATE TABLE IF NOT EXISTS OrderItems
 (
   order_num  int          NOT NULL ,
   order_item int          NOT NULL ,
