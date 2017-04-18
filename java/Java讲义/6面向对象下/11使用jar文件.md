@@ -70,3 +70,12 @@ java.io.IOException: invalid header field
 * 更新时显示详细信息:jar uvf test.jar Hello.class;
 
 ## 创建可执行的JAR包
+* 使用批处理文件执行java文件:建立一个批处理文件,内容如下:java package.MainClass
+  >命令没有执行,原因不明;
+* 使用批处理文件执行java文件,并且不保留运行java程序的命令行窗口:建立一个批处理文件,内容如下:start javaw package.MainClass
+  >命令没有执行,原因不明;
+* 创建可以执行的jar包:jar cvfe e.jar com/cdc/test/Main com
+  将com文件夹里面的class文件打成jar包(jar包的名字是e.jar),并指定里面的com.cdc.test.Main.class文件作为主类。
+* 执行jar包的两种方式
+    * java -jar e.jar 
+    * javaw e.jar  //这条命令没有执行
