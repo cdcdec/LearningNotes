@@ -6,7 +6,7 @@
 
   ```txt
 
-  C:\Users\wang>mysqld --defaults-file="D:\Program Files\MySQL\MySQL Server 5.6\my-default.ini" --console --skip-grant-tables
+  C:\Users\wang>mysqld --defaults-file="D:\mysql\mysql-5.6.24-win32\my-default.ini" --console --skip-grant-tables
   ```
 
   > 此时该窗口不可再写入。这也是检验命令是否正确执行的一个标准.
@@ -16,7 +16,7 @@
 - 执行命令
 
   ```txt
-  mysql->show database;
+  mysql->show databases;
   mysql->use mysql
   mysql->update user set password=PASSWORD('12345') where USER='root';
   这样，就将新密码设为了12345。
