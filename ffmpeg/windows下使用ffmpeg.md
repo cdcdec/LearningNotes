@@ -28,7 +28,7 @@ ffmpeg  -i tpsj.mp4 -vcodec copy -acodec copy -ss 00:01:30 -to 00:05:48 cutout1.
 * ffmpeg -i 2.swf hello.flv
 
 
-ffmpeg -i gm.rmvb -acodec copy -vcodec libx264 -b 560k -ss 00:04:51 -to  00:06:36 -f mp4 01.mp4
+ffmpeg -i gm.rmvb -acodec copy -vcodec libx264 -b 560k -ss 00:22:41 -to  00:28:30 -f mp4 02.mp4
 
 
 1.pass1编码
