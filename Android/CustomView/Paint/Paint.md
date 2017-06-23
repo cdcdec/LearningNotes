@@ -1,8 +1,12 @@
 # Paint
 
+>   android.graphics.Paint
+ 
+
 The Paint class holds the style and color information about how to draw geometries(几何体), text and bitmaps.
 
 
+Paint的一些列set方法,用于设置画笔的属性:
 * void set(Paint src)为当前画笔copy一个画笔
 * void  setARGB(int a, int r, int g, int b)
 设置Paint对象颜色，a代表透明度，r，g，b代表颜色值

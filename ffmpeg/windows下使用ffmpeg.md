@@ -54,6 +54,13 @@ ffmpeg -i 01.rmvb -acodec copy -vcodec libx264 -b 560k -bf 6 -f mp4 01.mp4
 
 
 
+ffmpeg -i 异星觉醒.rmvb -acodec copy -vcodec libx264 -b 560k -ss 00:33:01 -to  00:34:35 -f mp4 011.mp4
+
+
+
+
+
+
 
 
 
